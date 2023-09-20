@@ -1,0 +1,26 @@
+{
+    "title": "Navigation",
+    "rules": [
+        {
+            "description": "Caps_lock to fn as leader",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "caps_lock",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "fn"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
