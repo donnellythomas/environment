@@ -1,0 +1,70 @@
+{
+    "title": "Remaps",
+    "rules": [
+        {
+            "description": "Right command as escape",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_command",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "forward delete",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_forward"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "forward delete by word",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_command",
+                                "fn"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_forward",
+                            "modifiers": ["option"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
